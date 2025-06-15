@@ -3,13 +3,13 @@ package tasks
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.Input
 import org.gradle.api.tasks.OutputFile
-import org.gradle.api.tasks.TaskAction
+import org.gradle.process.ExecOperations
 import java.io.File
 import java.util.Properties
-import org.gradle.process.ExecOperations
-import javax.inject.Inject
 
-abstract class BaseBumperTask @Inject constructor(private val execOperations: ExecOperations) : DefaultTask() {
+abstract class BaseBumperTask (
+    private val execOperations: ExecOperations
+) : DefaultTask() {
     @OutputFile
     val versionsFile: File = project.rootProject.file("versions.properties")
 
@@ -22,11 +22,13 @@ abstract class BaseBumperTask @Inject constructor(private val execOperations: Ex
         }
     }
 
-    @Input
-    val getVersionNameList = properties["versionName"].toString().split(".")
+    @get:Input
+    val getVersionNameList: List<String>
+        get() = properties["versionName"].toString().split(".")
 
-    @Input
-    private val getVersionCode = properties["versionCode"].toString()
+    @get:Input
+    private val getVersionCode: String
+        get() = properties["versionCode"].toString()
 
     fun incrementVersionCode(): String = (getVersionCode.toIntOrNull()?.plus(1))?.toString() ?: "1"
 
