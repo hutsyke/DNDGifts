@@ -1,22 +1,16 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.jetbrainsKotlinAndroid)
-    alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.dnd.android.application)
     alias(libs.plugins.compose.compiler)
 }
 
 android {
     namespace = "com.hutsy.dndgifts"
-    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.hutsy.dndgifts"
-        minSdk = 28
-        targetSdk = 35
+
         versionCode = 1
         versionName = "1.0"
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -28,13 +22,7 @@ android {
             )
         }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
-    kotlinOptions {
-        jvmTarget = "11"
-    }
+
     buildFeatures {
         compose = true
     }

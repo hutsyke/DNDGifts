@@ -141,16 +141,7 @@ firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "
 ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
 
 # Localy declared plugins
-currencybuddy-android-application = { id = "currencybuddy.android.application", version = "unspecified" }
-currencybuddy-android-application-compose = { id = "currencybuddy.android.application.compose", version = "unspecified" }
-currencybuddy-android-library = { id = "currencybuddy.android.library", version = "unspecified" }
-currencybuddy-android-library-compose = { id = "currencybuddy.android.library.compose", version = "unspecified" }
-currencybuddy-android-feature-ui = { id = "currencybuddy.android.feature.ui", version = "unspecified" }
-currencybuddy-android-room = { id = "currencybuddy.android.room", version = "unspecified" }
-currencybuddy-android-dynamic-feature = { id = "currencybuddy.android.dynamic.feature", version = "unspecified" }
-currencybuddy-jvm-library = { id = "currencybuddy.jvm.library", version = "unspecified" }
-currencybuddy-jvm-ktor = { id = "currencybuddy.jvm.ktor", version = "unspecified" }
-currencybuddy-android-application-wear-compose = { id = "currencybuddy.android.application.wear.compose", version = "unspecified" }
+dnd-android-application = { id = "dnd.android.application", version = "unspecified" }
 
 [bundles]
 compose = [

@@ -14,6 +14,9 @@ dependencies {
 
 gradlePlugin {
     plugins {
-        
+        create("androidApplication") {
+            implementationClass = "AndroidApplicationConventionPlugin"
+            id = "dnd.android.application"
+        }
     }
 }
