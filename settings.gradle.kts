@@ -27,3 +27,4 @@ gradle.startParameter.excludedTaskNames.addAll(listOf(":build-logic:convention:t
 rootProject.name = "DNDGifts"
 include(":app")
 include(":core:presentation:designsystem")
+include(":core:presentation:ui")
