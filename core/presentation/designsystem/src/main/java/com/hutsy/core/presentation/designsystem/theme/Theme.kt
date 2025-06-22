@@ -1,4 +1,4 @@
-package com.hutsy.dndgifts.ui.theme
+package com.hutsy.core.presentation.designsystem.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
