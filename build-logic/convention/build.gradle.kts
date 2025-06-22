@@ -23,5 +23,15 @@ gradlePlugin {
             implementationClass = "AndroidApplicationComposeConventionPlugin"
             id = "dnd.android.application.compose"
         }
+
+        create("androidLibrary") {
+            implementationClass = "AndroidLibraryConventionPlugin"
+            id = "dnd.android.library"
+        }
+
+        create("androidLibraryCompose") {
+            implementationClass = "AndroidLibraryComposeConventionPlugin"
+            id = "dnd.android.library.compose"
+        }
     }
 }
