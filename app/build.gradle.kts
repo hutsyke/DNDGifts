@@ -63,4 +63,5 @@ dependencies {
     debugImplementation(libs.leakcanary.android)
 
     implementation(projects.core.presentation.designsystem)
+    implementation(projects.core.presentation.ui)
 }
