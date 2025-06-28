@@ -28,3 +28,4 @@ rootProject.name = "DNDGifts"
 include(":app")
 include(":core:presentation:designsystem")
 include(":core:presentation:ui")
+include(":core:domain")

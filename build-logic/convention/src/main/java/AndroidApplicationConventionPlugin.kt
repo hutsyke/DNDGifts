@@ -1,9 +1,8 @@
 import com.android.build.api.dsl.ApplicationExtension
-import com.hutsy.convention.configureKotlin
+import com.hutsy.convention.configureKotlinCompilerOptions
 import com.hutsy.convention.libs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
-import org.gradle.kotlin.dsl.apply
 import org.gradle.kotlin.dsl.configure
 import tasks.configureBumperTasks
 import java.util.Properties
@@ -38,7 +37,7 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
                 defaultConfig.versionCode = versionCode.toIntOrNull() ?: 1
                 defaultConfig.versionName = versionName
 
-                configureKotlin(this)
+                configureKotlinCompilerOptions(this)
             }
         }
     }

@@ -33,5 +33,10 @@ gradlePlugin {
             implementationClass = "AndroidLibraryComposeConventionPlugin"
             id = "dnd.android.library.compose"
         }
+
+        create("jvmLibrary") {
+            implementationClass = "JvmLibraryConventionPlugin"
+            id = "dnd.jvm.library"
+        }
     }
 }
