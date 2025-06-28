@@ -1,9 +1,8 @@
 import com.android.build.api.dsl.LibraryExtension
-import com.hutsy.convention.configureKotlin
+import com.hutsy.convention.configureKotlinCompilerOptions
 import com.hutsy.convention.libs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
-import org.gradle.kotlin.dsl.apply
 import org.gradle.kotlin.dsl.configure
 import org.gradle.kotlin.dsl.dependencies
 
@@ -17,7 +16,7 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
             }
 
             extensions.configure<LibraryExtension> {
-                configureKotlin(this)
+                configureKotlinCompilerOptions(this)
 
                 defaultConfig.testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
                 defaultConfig.consumerProguardFiles("consumer-rules.pro")

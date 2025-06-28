@@ -145,6 +145,7 @@ dnd-android-application = { id = "dnd.android.application", version = "unspecifi
 dnd-android-application-compose = { id = "dnd.android.application.compose", version = "unspecified" }
 dnd-android-library = { id = "dnd.android.library", version = "unspecified" }
 dnd-android-library-compose = { id = "dnd.android.library.compose", version = "unspecified" }
+dnd-jvm-library = { id = "dnd.jvm.library", version = "unspecified" }
 
 [bundles]
 compose = [

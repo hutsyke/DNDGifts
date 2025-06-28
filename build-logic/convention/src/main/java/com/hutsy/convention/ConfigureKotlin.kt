@@ -8,9 +8,10 @@ import org.gradle.kotlin.dsl.configure
 import org.gradle.kotlin.dsl.dependencies
 import org.gradle.kotlin.dsl.withType
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-fun Project.configureKotlin(
+fun Project.configureKotlinCompilerOptions(
     extension: CommonExtension<*, *, *, *, *, *>
 ) {
     extension.run {
@@ -26,7 +27,7 @@ fun Project.configureKotlin(
             isCoreLibraryDesugaringEnabled = true
         }
 
-        configureKotlin()
+        configureKotlinCompilerOptions()
 
         dependencies {
             "implementation"(libs.findLibrary("androidx.core.ktx").get())
@@ -35,7 +36,7 @@ fun Project.configureKotlin(
     }
 }
 
-private fun Project.configureKotlin() {
+private fun Project.configureKotlinCompilerOptions() {
     tasks.withType<KotlinCompile>().configureEach {
         compilerOptions {
             jvmTarget.set(JvmTarget.JVM_11)
@@ -49,4 +50,6 @@ fun Project.configureKotlinJvm() {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
+    configureKotlinCompilerOptions()
 }
