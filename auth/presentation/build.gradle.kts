@@ -1,9 +1,9 @@
 plugins {
-    alias(libs.plugins.dnd.android.library)
+    alias(libs.plugins.dnd.android.library.compose)
 }
 
 android {
-    namespace = "com.hutsy.core.data"
+    namespace = "com.hutsy.auth.presentation"
 
     buildTypes {
         release {
@@ -17,6 +17,8 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.work)
     implementation(projects.core.domain)
+    implementation(projects.auth.domain)
+    implementation(projects.core.presentation.ui)
+    implementation(projects.core.presentation.designsystem)
 }

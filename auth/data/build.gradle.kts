@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.hutsy.core.data"
+    namespace = "com.hutsy.auth.data"
 
     buildTypes {
         release {
@@ -17,6 +17,6 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.work)
+    implementation(projects.core.data)
     implementation(projects.core.domain)
 }

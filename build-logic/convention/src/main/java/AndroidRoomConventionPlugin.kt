@@ -13,6 +13,7 @@ class AndroidRoomConventionPlugin : Plugin<Project> {
                 apply("dnd.android.library")
                 apply("androidx.room")
                 apply("com.google.devtools.ksp")
+                apply("org.jetbrains.kotlin.plugin.serialization")
             }
 
             extensions.configure<LibraryExtension> {
