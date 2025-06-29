@@ -1,13 +1,11 @@
 plugins {
     alias(libs.plugins.dnd.android.application.compose)
+    alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.kotlin.parcelize)
 }
 
 android {
     namespace = "com.hutsy.dndgifts"
-
-    defaultConfig {
-        applicationId = "com.hutsy.dndgifts"
-    }
 
     buildTypes {
         release {

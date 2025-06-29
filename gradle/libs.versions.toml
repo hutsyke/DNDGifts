@@ -1,6 +1,6 @@
 [versions]
-agp = "8.9.3"
-androidTools = "31.10.1"
+agp = "8.10.1"
+androidTools = "31.11.0"
 playFeatureDelivery = "2.1.0"
 coreSplashscreen = "1.0.1"
 coilCompose = "2.7.0"
@@ -16,14 +16,14 @@ ktorClientLogging = "3.1.1"
 ktorServerCallLogging = "3.1.1"
 koin = "4.0.0"
 lifecycleRuntimeKtx = "2.9.1"
-composeRuntimeKtx = "1.8.2"
-composeBom = "2025.06.00"
+composeRuntimeKtx = "1.8.3"
+composeBom = "2025.06.01"
 materialIconsExtended = "1.7.8"
 navigationCompose = "2.9.0"
 securityCryptoKtx = "1.1.0-beta01"
 timber = "5.0.1"
 ksp = "2.1.20-1.0.32"
-room = "2.7.1"
+room = "2.7.2"
 appcompat = "1.7.1"
 material = "1.12.0"
 org-jetbrains-kotlin-jvm = "2.1.20"
@@ -32,16 +32,16 @@ coroutines = "1.10.1"
 gmsLocation = "21.3.0"
 mapsUtils = "5.0.0"
 bson = "5.1.2"
-work = "2.10.1"
+work = "2.10.2"
 kotlinx-serialization = "1.8.0"
 secretsPlugin = "2.0.1"
 playServicesMaps = "19.2.0"
 annotation = "1.9.1"
-firebase-analytics = "22.4.0"
+firebase-analytics = "22.5.0"
 firebase-crashlytics = "19.4.4"
-google-services = "4.4.2"
+google-services = "4.4.3"
 firebase-crashlytics-gradle = "3.0.4"
-firebase-bom = "33.15.0"
+firebase-bom = "33.16.0"
 ktlint = "12.1.2"
 lottie-compose = "4.0.0"
 preference-datastore = "1.1.7"
@@ -49,7 +49,7 @@ jetpack-glance = "1.1.1"
 leakcanary-android = "2.14"
 
 # Project versions
-projectApplicationId = "tech.ericwathome.currencybuddy"
+projectApplicationId = "com.hutsy.dndgifts"
 projectMinSdkVersion = "28"
 projectTargetSdkVersion = "35"
 projectCompileSdkVersion = "35"
@@ -131,6 +131,7 @@ android-library = { id = "com.android.library", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 room = { id = "androidx.room", version.ref = "room" }
 org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kotlin-jvm" }
@@ -146,6 +147,7 @@ dnd-android-application-compose = { id = "dnd.android.application.compose", vers
 dnd-android-library = { id = "dnd.android.library", version = "unspecified" }
 dnd-android-library-compose = { id = "dnd.android.library.compose", version = "unspecified" }
 dnd-jvm-library = { id = "dnd.jvm.library", version = "unspecified" }
+dnd-jvm-ktor = { id = "dnd.jvm.ktor", version = "unspecified" }
 dnd-android-room = { id = "dnd.android.room", version = "unspecified" }
 
 [bundles]
