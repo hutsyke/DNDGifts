@@ -29,6 +29,7 @@
             <option value="$PROJECT_DIR$/core/data" />
             <option value="$PROJECT_DIR$/core/datasource" />
             <option value="$PROJECT_DIR$/core/datasource/local" />
+            <option value="$PROJECT_DIR$/core/datasource/remote" />
             <option value="$PROJECT_DIR$/core/domain" />
             <option value="$PROJECT_DIR$/core/presentation" />
             <option value="$PROJECT_DIR$/core/presentation/designsystem" />

@@ -43,5 +43,10 @@ gradlePlugin {
             implementationClass = "AndroidRoomConventionPlugin"
             id = "dnd.android.room"
         }
+
+        create("jvmKtor") {
+            implementationClass = "JvmKtorConventionPlugin"
+            id = "dnd.jvm.ktor"
+        }
     }
 }
