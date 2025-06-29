@@ -67,4 +67,6 @@ dependencies {
     implementation(projects.core.datasource.local)
     implementation(projects.core.datasource.remote)
     implementation(projects.auth.data)
+    implementation(projects.auth.domain)
+    implementation(projects.auth.presentation)
 }
