@@ -38,5 +38,10 @@ gradlePlugin {
             implementationClass = "JvmLibraryConventionPlugin"
             id = "dnd.jvm.library"
         }
+
+        create("androidRoom") {
+            implementationClass = "AndroidRoomConventionPlugin"
+            id = "dnd.android.room"
+        }
     }
 }
