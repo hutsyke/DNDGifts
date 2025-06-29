@@ -165,7 +165,6 @@ compose-debug = [
     "androidx-compose-ui-test-manifest",
 ]
 koin = ["koin-core", "koin-android", "koin-android-workmanager"]
-koin-compose = ["koin-core", "koin-android", "koin-android-workmanager", "koin-androidx-compose"]
 ktor = [
     "ktor-client-auth",
     "ktor-client-cio",

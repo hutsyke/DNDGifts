@@ -21,6 +21,8 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
                 defaultConfig.consumerProguardFiles("consumer-rules.pro")
 
                 dependencies {
+                    "implementation"(libs.findLibrary("timber").get())
+                    "implementation"(libs.findBundle("koin").get())
                     "testImplementation"(libs.findLibrary("junit").get())
                     "androidTestImplementation"(libs.findLibrary("androidx.junit").get())
                 }

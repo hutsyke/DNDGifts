@@ -17,5 +17,6 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.work)
     implementation(projects.core.domain)
 }

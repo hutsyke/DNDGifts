@@ -18,6 +18,10 @@ class AndroidApplicationComposeConventionPlugin : Plugin<Project> {
             extensions.configure<ApplicationExtension> {
                 configureCompose(this)
             }
+
+            dependencies {
+                "implementation"(libs.findBundle("koin").get())
+            }
         }
     }
 }

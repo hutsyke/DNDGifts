@@ -16,6 +16,10 @@ android {
             )
         }
     }
+
+    buildFeatures {
+        buildConfig = true
+    }
 }
 
 dependencies {
@@ -24,7 +28,6 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.lifecycle.runtime.compose)
     implementation(libs.androidx.navigation.compose)
-    implementation(libs.bundles.koin.compose)
     implementation(libs.bundles.compose)
 
     // Core
@@ -33,8 +36,6 @@ dependencies {
 
     // Crypto
     implementation(libs.androidx.security.crypto.ktx)
-
-    implementation(libs.bundles.koin)
 
     api(libs.play.feature.delivery)
     api(libs.play.feature.delivery.ktx)
