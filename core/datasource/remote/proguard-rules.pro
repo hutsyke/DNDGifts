@@ -22,3 +22,4 @@
 
 -keep class com.hutsy.datasource.remote.util.HttpClientFactory { *; }
 -keep class com.hutsy.datasource.remote.di.RemoteDatasourceModuleKt { *; }
+-keep class com.hutsy.datasource.remote.util.HttpClientUtilKt { *; }
