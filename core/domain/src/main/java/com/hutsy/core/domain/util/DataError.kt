@@ -12,13 +12,13 @@ sealed class DataError {
         SERVICE_UNAVAILABLE,
         TIMEOUT,
         NO_INTERNET,
-        UNKNOWN
+        UNKNOWN,
     }
 
     enum class Local {
         DISK_FULL,
         CACHE_CORRUPTION,
         INVALID_DATA_FORMAT,
-        PERMISSION_DENIED
+        PERMISSION_DENIED,
     }
 }

@@ -6,6 +6,6 @@ import androidx.room.RoomDatabase
 @Database(
     entities = [],
     version = 1,
-    autoMigrations = []
+    autoMigrations = [],
 )
 abstract class DnDGiftsDB : RoomDatabase()

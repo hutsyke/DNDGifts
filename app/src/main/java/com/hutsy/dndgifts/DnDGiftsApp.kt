@@ -1,7 +1,8 @@
 package com.hutsy.dndgifts
 
 import android.app.Application
-import com.hutsy.datasource.local.di.localModule
+import com.hutsy.datasource.local.di.localDatasourceModule
+import com.hutsy.datasource.remote.di.remoteDatasourceModule
 import com.hutsy.dndgifts.di.applicationModule
 import com.hutsy.dndgifts.error.CrashHandler
 import com.hutsy.dndgifts.error.CrashlyticsTree
@@ -49,7 +50,8 @@ class DnDGiftsApp : Application() {
             workManagerFactory()
             modules(
                 applicationModule,
-                localModule
+                localDatasourceModule,
+                remoteDatasourceModule,
             )
         }
     }

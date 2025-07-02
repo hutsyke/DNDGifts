@@ -10,15 +10,23 @@ import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.map
 
 interface PreferencesHelper {
-    suspend fun <D> save(key: Preferences.Key<D>, data: D)
+    suspend fun <D> save(
+        key: Preferences.Key<D>,
+        data: D,
+    )
+
     suspend fun <D> delete(key: Preferences.Key<D>)
+
     fun <D> get(key: Preferences.Key<D>): Flow<D?>
 }
 
 class PreferencesHelperImpl(
-    private val dataStore: DataStore<Preferences>
+    private val dataStore: DataStore<Preferences>,
 ) : PreferencesHelper {
-    override suspend fun <D> save(key: Preferences.Key<D>, data: D) {
+    override suspend fun <D> save(
+        key: Preferences.Key<D>,
+        data: D,
+    ) {
         dataStore.edit {
             it[key] = data
         }
@@ -37,5 +45,4 @@ class PreferencesHelperImpl(
             if (e is IOException) emptyPreferences()
         }
     }
-
 }
