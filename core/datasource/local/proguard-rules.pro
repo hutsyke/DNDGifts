@@ -19,3 +19,7 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+-keep class com.hutsy.datasource.local.di.LocalModuleKt { *; }
+-keep class com.hutsy.datasource.local.source.db.DnDGiftsDB { *; }
+-keep class com.hutsy.datasource.local.source.preference.PreferencesHelper { *; }
+-keep class com.hutsy.datasource.local.source.preference.PreferencesHelperImpl { *; }

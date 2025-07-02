@@ -21,3 +21,5 @@
 #-renamesourcefileattribute SourceFile
 
 -keep class com.hutsy.dndgifts.di.ApplicationModuleKt { *; }
+-keep class com.hutsy.core.domain.util.DataError { *; }
+-keep class com.hutsy.core.domain.util.ResourceKt { *; }
