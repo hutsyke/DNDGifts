@@ -19,5 +19,4 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
-
--keep class com.hutsy.core.domain.util.ResourceKt { *; }
+-keep class com.hutsy.datasource.local.di.LocalModuleKt { *; }
