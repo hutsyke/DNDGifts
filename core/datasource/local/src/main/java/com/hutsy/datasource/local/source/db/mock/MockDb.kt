@@ -6,5 +6,5 @@ import androidx.room.PrimaryKey
 @Entity
 data class MockDb(
     @PrimaryKey(autoGenerate = true)
-    val id: Long
+    val id: Long,
 )

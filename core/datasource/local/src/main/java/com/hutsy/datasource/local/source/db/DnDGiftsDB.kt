@@ -6,7 +6,7 @@ import com.hutsy.datasource.local.source.db.mock.MockDbEntity
 
 @Database(
     entities = [
-        MockDbEntity::class
+        MockDbEntity::class,
     ],
     version = 1,
     autoMigrations = [],
