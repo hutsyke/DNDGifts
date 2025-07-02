@@ -2,11 +2,11 @@ package com.hutsy.datasource.local.source.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.hutsy.datasource.local.source.db.mock.MockDb
+import com.hutsy.datasource.local.source.db.mock.MockDbEntity
 
 @Database(
     entities = [
-        MockDb::class
+        MockDbEntity::class
     ],
     version = 1,
     autoMigrations = [],
